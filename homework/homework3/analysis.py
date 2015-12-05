@@ -2,6 +2,7 @@
 ##
 ## Author: Ignacio Mulas
 
+import sys
 import pandas as pd
 import pandas.io.parsers as pd_par
 import numpy as np
@@ -14,7 +15,8 @@ import QSTK.qstkutil.tsutil as tsu
 
 NUM_TRADING_DAYS = 252
 ls_symbols = ["$SPX"]
-valueFile = "values.csv"
+#valueFile = "values-exam-2.csv"
+valueFile = sys.argv[1]
 
 value_data = pd_par.read_csv(valueFile, header=None)
 portVal = value_data[3].values.copy()

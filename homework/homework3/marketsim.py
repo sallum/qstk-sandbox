@@ -2,6 +2,7 @@
 ## 
 ## Author: Ignacio Mulas
 
+import sys
 import pandas as pd
 import pandas.io.parsers as pd_par
 import numpy as np
@@ -13,8 +14,10 @@ import QSTK.qstkutil.DataAccess as da
 import QSTK.qstkutil.tsutil as tsu
 
 startCash = 1000000
-orderFile = "orders.csv"
-valueFile = "values.csv"
+#orderFile = "orders-exam-2.csv"
+orderFile = sys.argv[1]
+#valueFile = "values-exam-2.csv"
+valueFile = sys.argv[2]
 
 orderDF = pd_par.read_csv(orderFile, header=None)
 
