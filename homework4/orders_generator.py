@@ -30,7 +30,7 @@ nan = no information about any event.
 """
 
 # Define amount to consider events
-evtAmount = 6.0
+evtAmount = 10.0
 # Output file with orders
 orderFile = "orders.csv"
 # Symbols to use

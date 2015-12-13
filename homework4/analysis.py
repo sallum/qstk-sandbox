@@ -1,7 +1,6 @@
 ## Homework 3
 ##
 ## Author: Ignacio Mulas
-
 import sys
 import pandas as pd
 import pandas.io.parsers as pd_par
